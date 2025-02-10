@@ -14,7 +14,11 @@
 
         body {
             min-height: 100vh;
+        }
+
+        .gradient-section {
             background: linear-gradient(135deg, #00f2c3 0%, #4d7fff 100%);
+            padding-bottom: 6rem;
         }
 
         .navbar {
@@ -88,48 +92,122 @@
             text-decoration: underline;
         }
 
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 1rem 2rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero {
-                padding: 4rem 1rem;
-            }
+        .features {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
         }
-    </style>
-</head>
-<body>
-    <nav class="navbar">
-        <a href="/" class="logo">SUBLIME.</a>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">Pricing</a>
-            <a href="#">Tour</a>
-            <a href="#">Log in</a>
-            <a href="#" class="sign-up">Sign up</a>
-        </div>
-    </nav>
 
-    <main class="hero">
-        <h1>Create cool template,<br>For the better web</h1>
-        <p>A modern type of website template for your new<br>business brought to you by uicookies.com</p>
-        <a href="#" class="watch-intro">
-            Watch the intro
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/>
-                <polygon points="10 8 16 12 10 16" fill="currentColor"/>
-            </svg>
-        </a>
-    </main>
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1.5rem;
+            color: #4d7fff; .feature-card h3 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .get-started-btn {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 1rem;
+            background: #4d7fff;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            transition: background-color 0.2s;
+        }
+
+        .get-started-btn:hover {
+            background: #3d6ae8;
+        }
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sublime - Modern Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        .gradient-section {
+            background: linear-gradient(135deg, #00f2c3 0%, #4d7fff 100%);
+            padding-bottom: 6rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 4rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.2s;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+        }
+
+        .sign-up {
+            border: 2px solid white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+        }
+
+     
 </body>
 </html>
+       
