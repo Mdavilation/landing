@@ -39,3 +39,62 @@ body {
     gap: 2rem;
     align-items: center;
 }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.sign-up {
+    border: 2px solid white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.sign-up:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+/*seccion */
+
+.hero {
+    text-align: center;
+    padding: 8rem 2rem;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.5px;
+}
+.hero p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.watch-intro {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
