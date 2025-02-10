@@ -135,3 +135,60 @@ body {
     color: #4d7fff;
     transition: transform 0.3s ease;
 }
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.5rem;
+    color: #4d7fff;
+    transition: transform 0.3s ease;
+}
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+.feature-card h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+/*boton para call to action*/
+.get-started-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #4d7fff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.get-started-btn:hover {
+    background: #3d6ae8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(77, 127, 255, 0.3);
+}
+
+.get-started-btn:active {
+    transform: translateY(0);
+}
